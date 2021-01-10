@@ -25,7 +25,7 @@ header {
   }
   nav {
     float: left;
-    width: 10%;
+    width: 15%;
     background: rgb(201, 111, 201);
     padding: 20px;
     position: fixed;
@@ -42,7 +42,7 @@ nav ul {
 article {
     float: right;
     padding: 20px;
-    width: 90%;
+    width: 85%;
     background-color:rgb(219, 199, 219);
 
   }
