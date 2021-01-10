@@ -4,7 +4,9 @@
 	<title>MY PAGE</title>
 	<style>
 		body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+		table, th, td {border: 1px solid black;}  
 	</style>
+	
 </head>
 <body>
 	<h1 id="Element">Element</h1>
@@ -141,7 +143,124 @@
 	<p>การใส่รูปภาพในภาษา HTML นั้นเราจะใช้ tag <mark>&lt;img&gt;</mark> **ไม่ต้องปิด tag นะจ้ะ <br>
 	<b>&lt;<span style="color: brown;">img</span> <span style="color:red;">src</span>=<span style="color:blue;">"url ของรูป,ที่อยู่ของรูป"</span> <span style="color:red;">alt</span>=<span style="color:blue;">"alternatetext"</span>&gt;</b><br>
 	&lt;<span style="color: brown;">img</span> <span style="color:red;">src</span>=<span style="color:blue;">"\img\mycat.png"</span> <span style="color:red;">alt</span>=<span style="color:blue;">"cat"</span>&gt;</p>
-	<img src="\SoftII\WEEK1\Pakpoom-Phoonpunt.github.io\img\mycat.png" alt="cat" width="25%" height="25%"> <!--ใช้ width height กำหนดขนาดของรูป-->
+	<img src="img\mycat.png" alt="cat" width="25%" height="25%"> <!--ใช้ width height กำหนดขนาดของรูป-->
+
+	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
+
+	<h1>Tables</h1>
+	<p>สำหรับการสร้างตาราง HTML มี tag ที่ใช้คือ &lt;table&gt; เเละ tag ย่ออื่นๆอีกดังนี้<br>
+	<ul>
+		<li>row เเต่ละ row จะใช้ &lt;tr&gt;</li>
+		<li>ส่วนหัวข้อใหญ่ของตารางใช้ &lt;th&gt;</li>
+		<li>เนื้อหาเเต่ละ cell ใช้ &lt;td&gt;</li>
+	</ul><br>
+	<b>Simple</b>
+	<pre>
+		&lt;table style="width:50%">
+			&lt;tr>
+				&lt;th>Firstname&lt;/th>
+				&lt;th>Lastname&lt;/th>
+				&lt;th>Age&lt;/th>
+			&lt;/tr>
+			&lt;tr>
+				&lt;td>Jill&lt;/td>
+				&lt;td>Smith&lt;/td>
+				&lt;td>50&lt;/td>
+			&lt;/tr>
+			&lt;tr>
+				&lt;td>Eve&lt;/td>
+				&lt;td>Jackson&lt;/td>
+				&lt;td>94&lt;/td>
+				&lt;/tr>
+		&lt;/table>
+		
+	<span style="font-size: larger;">ที่ head ผมใส่ border ตามนี้ 
+
+	table, th, td {
+		border: 1px solid black;
+	}</span>
+	</pre>
+	</p>
+	<table style="width:50%;">
+		<tr>
+		  <th>Firstname</th>
+		  <th>Lastname</th>
+		  <th>Age</th>
+		</tr>
+		<tr>
+		  <td>Jill</td>
+		  <td>Smith</td>
+		  <td>50</td>
+		</tr>
+		<tr>
+		  <td>Eve</td>
+		  <td>Jackson</td>
+		  <td>94</td>
+		</tr>
+	  </table>
+
+	<h3>ตารางที่ cell มี colunm มากกว่าหนึ่ง colunm</h3>
+	<p>เราจะใช้ attribute <mark>colspan</mark> มาช่วยในส่วนนี้ <br>
+	<b>Simple</b><br>
+	<pre>
+		&lt;table style="width:50%">
+			&lt;tr>
+				&lt;th>Name</th>
+				&lt;th colspan="2">Telephone</th>
+			&lt;/tr>
+			&lt;tr>
+				&lt;td>Bill Gates</td>
+				&lt;td>55577854</td>
+				&lt;td>55577855</td>
+			&lt;/tr>
+		&lt;/table>
+	</pre></p>
+	<table style="width:50%;">
+		<tr>
+		  <th>Name</th>
+		  <th colspan="2">Telephone</th>
+		</tr>
+		<tr>
+		  <td>Bill Gates</td>
+		  <td>55577854</td>
+		  <td>55577855</td>
+		</tr>
+	</table>
+
+	<h3>ตารางที่ cell มี row มากกว่าหนึ่ง row</h3>
+	<p>ในส่วนนี้เราจะ attribute  <mark>rowspan</mark> เข้ามาช่วยนั้นเอง <br>
+	<ins>เเถม</ins> เราสามารถใส่ชื่อของตารางได้โดยใช้ tag <mark>&lt;caption></mark><br>
+	Simple</p>
+	<pre><xmp>
+		<table style="width:50%">
+			<caption>Telephone</caption>
+			<tr>
+			  <th>Name:</th>
+			  <td>Bill Gates</td>
+			</tr>
+			<tr>
+			  <th rowspan="2">Telephone:</th>
+			  <td>55577854</td>
+			</tr>
+			<tr>
+			  <td>55577855</td>
+			</tr>
+		</table>
+	</xmp></pre>
+	<table style="width:50%">
+		<caption>Telephone</caption>
+		<tr>
+		  <th>Name:</th>
+		  <td>Bill Gates</td>
+		</tr>
+		<tr>
+		  <th rowspan="2">Telephone:</th>
+		  <td>55577854</td>
+		</tr>
+		<tr>
+		  <td>55577855</td>
+		</tr>
+	</table>
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
