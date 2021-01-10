@@ -5,6 +5,9 @@
     list-style: none;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 h1 {
     padding: 5px;
 }
@@ -17,13 +20,17 @@ header {
     text-align: center;
     font-size: 35px;
     color: white;
+    width: 90%;
+    float: right;
   }
   nav {
     float: left;
     width: 10%;
-    
     background: rgb(201, 111, 201);
     padding: 20px;
+    position: fixed;
+    transition: 0.4s;
+    height: 1500px;
   }
 nav ul {
     list-style-type: none;
@@ -33,13 +40,13 @@ nav ul {
   
   
 article {
-    float: left;
+    float: right;
     padding: 20px;
     width: 90%;
     background-color:rgb(219, 199, 219);
 
   }
-  section::after {
+section::after {
     content: "";
     display: table;
     clear: both;

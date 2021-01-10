@@ -4,7 +4,8 @@
 	<title>MY PAGE</title>
 	<style>
 		body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
-		table, th, td {border: 1px solid black;}  
+		table, th, td {border: 1px solid black;}
+		td{text-align: center;}  
 	</style>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -178,7 +179,7 @@
 		<li>เนื้อหาเเต่ละ cell ใช้ &lt;td&gt;</li>
 	</ul><br>
 	<b>Simple</b>
-	<pre>
+	<pre style="font-size: large;">
 		&lt;table style="width:50%">
 			&lt;tr>
 				&lt;th>Firstname&lt;/th>
@@ -225,7 +226,7 @@
 	<h3>ตารางที่ cell มี colunm มากกว่าหนึ่ง colunm</h3>
 	<p>เราจะใช้ attribute <mark>colspan</mark> มาช่วยในส่วนนี้ <br>
 	<b>Simple</b><br>
-	<pre>
+	<pre style="font-size: large;">
 		&lt;table style="width:50%">
 			&lt;tr>
 				&lt;th>Name</th>
@@ -254,7 +255,7 @@
 	<p>ในส่วนนี้เราจะ attribute  <mark>rowspan</mark> เข้ามาช่วยนั้นเอง <br>
 	<ins>เเถม</ins> เราสามารถใส่ชื่อของตารางได้โดยใช้ tag <mark>&lt;caption></mark><br>
 	Simple</p>
-	<pre><xmp>
+	<pre style="font-size: large;"><xmp>
 		<table style="width:50%">
 			<caption>Telephone</caption>
 			<tr>
@@ -283,9 +284,91 @@
 		<tr>
 		  <td>55577855</td>
 		</tr>
-	</table>
+	</table><br>
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
+
+	<h1 id="Lists">Lists</h1>
+	<p>
+		tag ของการสร้าง list เราจะใช้ตามนี้
+		<table style="width:50%">
+			<tr>
+				<th>tag</th>
+				<th>รายละเอียด</th>
+			</tr>
+			<tr>
+				<td>&lt;ul></td>
+				<td>สร้าง list เเบบ unordered list</td>
+			</tr>
+			<tr>
+				<td>&lt;ol></td>
+				<td>สร้าง list เเบบ ordered list</td>
+			</tr>
+			<tr>
+				<td>&lt;il></td>
+				<td>สร้างรายการต่างๆใน list</td>
+			</tr>
+			<tr>
+				<td>&lt;dl></td>
+				<td>สร้าง list เเบบ description list</td>
+			</tr>
+			<tr>
+				<td>&lt;dt></td>
+				<td>สร้างรายการต่างๆใน description list</td>
+			</tr>
+			<tr>
+				<td>&lt;dd></td>
+				<td>ใช้เพิ่มคำอธิบายของรายการใน description list</td>
+			</tr>
+		</table><br>
+		<b>ตัวอย่าง unordered list</b>
+		<pre style="font-size: large;"><xmp>
+			<ul>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ul>
+		</xmp></pre>
+		ผลลัพธ์ :
+		<ul>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ul><br>
+		<b>ตัวอย่าง ordered list</b>
+		<pre style="font-size: large;"><xmp>
+			<ol>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ol>
+		</xmp></pre>
+		ผลลัพธ์ :
+		<ol>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ol><br>
+		<b>ตัวอย่าง description list</b>
+		<pre style="font-size: large;"><xmp>
+			<dl>
+				<dt>Coffee</dt>
+				<dd>- black hot drink</dd>
+				<dt>Milk</dt>
+				<dd>- white cold drink</dd>
+			</dl>
+		</xmp></pre>
+		ผลลัพธ์ :
+		<dl>
+			<dt>Coffee</dt>
+			<dd>- black hot drink</dd>
+			<dt>Milk</dt>
+			<dd>- white cold drink</dd>
+		</dl>
+	</p>
+
+	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
+
 </article>
 </section>
 </body>
