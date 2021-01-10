@@ -6,9 +6,32 @@
 		body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
 		table, th, td {border: 1px solid black;}  
 	</style>
-	
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<header>
+		<h1>HTML</h2>
+	</header>
+	<section>
+		<nav>
+			<h4 style="text-align: center;">Content</h4>
+			<ul>
+			  <li><a href="#Element">Element</a></li>
+			  <li><a href="#Attributes">Attributes</a></li>
+			  <li><a href="#Paragraphs">Paragraphs</a></li>
+			  <li><a href="#Styles">Styles</a></li>
+			  <li><a href="#Formatting">Formatting</a></li>
+			  <li><a href="#Quotation">Quotation</a></li>
+			  <li><a href="#Comments">Comments</a></li>
+			  <li><a href="#Colors">Colors</a></li>
+			  <li><a href="#CSS">CSS</a></li>
+			  <li><a href="#Links">Links</a></li>
+			  <li><a href="#Images">Images</a></li>
+			  <li><a href="#Tables">Tables</a></li>
+			  <li><a href="#Lists">Lists</a></li>
+			</ul>
+		  </nav>
+	<article>
 	<h1 id="Element">Element</h1>
 	<p>Element ต่างๆจะอยู่ข้างใน tag เปิดเเละ tag ปิดนะจ้ะ <br>&lt;p&gt;HELLO&lt;/p&gt;<br>HELLO</p> <!-- &lt; คือ < , &gt; คือ > -->
 	<p>สวัสดีผมคือ Element ใน tag &lt;p&gt;</p>
@@ -16,7 +39,7 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Attributes</h1>
+	<h1 id="Attributes">Attributes</h1>
 	<p>การใส่ Attributes จะใส่ที่ tag เปิดเเละใส่เป็นคู่ <b>name="value"</b> นะจ้ะ</p>
 	<p>&lt;p name="value"&gt;Element&lt;/p&gt;</p>
 	<a href="https://steamcommunity.com/id/volkzap/" target="_blank">ผมเป็น Hyperlink มี<b> Attributes คือ href เเละ value คือ https://steamcommunity.com/id/volkzap/ </b></a>
@@ -29,7 +52,7 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Headings</h1>
+	<h1 id="Headings">Headings</h1>
 	<p>ในหัวข้อ Headings นั้นไม่มีอะไรมากเป็น tag ที่บ่งบอกว่าข้อความใน tag นั้นเป็นหัวข้อ <br>มีการเรียงลำดับความสำคัญอยู่ 6 ระดับ 
 	ฉะนั้น tag headings จะมีตั้งเเต่ &lt;h1&gt; ไปจนถึง &lt;h6&gt;</p>
 	<p>&lt;h1&gt;Element&lt;/h1&gt;</p>
@@ -37,7 +60,7 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Paragraphs</h1>
+	<h1 id="Paragraphs">Paragraphs</h1>
 	<p>Paragraph เป็นอีก tag ที่ใช้เยอะมากใน HTML ใช้เขียนข้อความหรือบทความต่างๆ<br>
 	Paragraph นั้นไม่ว่าเราจะเว้นช่องว่างระหว่างข้อความมากเท่าไร(การขึ้นบรรทัดใหม่ด้วย)ในตัว code html ของเราเเต่เมื่อผ่านการ render จาก browser เเล้วช่องว่างที่เราเว้นไว้เยอะมันจะกลายเป็นเเค่ช่อง spacebar ช่องเดียวอยู่ดี</p>
 	<p>&lt;p&gt;Element&lt;/p&gt;</p>
@@ -57,15 +80,15 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Styles</h1>
+	<h1 id="Styles">Styles</h1>
 	<p>Style เป็น attribute สำหรับเพิ่มรูปเเบบสีสันต่างๆให้กับ Element ไม่ว่าจะเป็นสี,ฟอนต์,ขนาดตัวอักษร ฯลฯ</p>
 	<b><p>&lt;<span style="color:brown"> tagname</span><span style="color: chartreuse;"> style</span><span style="color:blue;">="<i>property:value;</i>"</span>&gt;</p></b>
-	<p style="background-color: crimson;" title="ใช้ property background-color">ทำไมผมมีสีพื้นหลังนะ??</p>
+	<p style="background-color: crimson; display: inline;" title="ใช้ property background-color" >ทำไมผมมีสีพื้นหลังนะ??</p>
 	<p style="font-size: large;" title="ใช้ property font-size">ทำไมผมใหญ่กว่าชาวบ้านนะ??</p>
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 	
-	<h1>Formatting</h1>
+	<h1 id="Formatting">Formatting</h1>
 	<p>เราสามารถ Format ข้อความต่างๆของเราได้ด้วยการใช้ tag ตามด้านล่างนี้<br>
 	- <b>ข้อความตัวหนาเราใช้ tag</b> &lt;b&gt; <br>
 	- <strong>ข้อความที่เราต้องการให้ความสำคัญเราใช้ tag</strong> &lt;strong&gt; <br>
@@ -80,7 +103,7 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Quotation</h1>
+	<h1 id="Quotation">Quotation</h1>
 	<p>สำหรับในหัวข้อนี้จะเป็น tag การใส่พวกเครื่องหมายคำพูด,กำหนดตัวย่อ,tag สำหรับใส่พวก address</p>
 	<p>สำหรับ tag ของเครื่องหมายคำพูดนั้นเราใช้ &lt;q&gt; <br>&lt;q&gt;Element&lt;/q&gt;<br><q>ผมอยู่ในเครื่องหมายคำพูดหล่ะ</q></p>
 	<p>เราใช้ tag &lt;abbr&gt; เพื่อบอกว่าคำนั้นคือคำย่อเช่น <abbr title="Hyper Text Markup Language">HTML</abbr><br>&lt;abbr title="ข้อความ"&gt;Element&lt;/abbr&gt;</p>
@@ -89,18 +112,18 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Comments</h1>
+	<h1 id="Comments">Comments</h1>
 	<p>การ Comment code ของ HTML ทำได้ง่ายตามด้านล่างนี้เลยครับ<br>
 		<b>&lt;!-- ข้อความที่จะ Comment --&gt;</b></p>
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Colors</h1>
+	<h1 id="Colors">Colors</h1>
 	<p>สีเป็นค่าค่าหนึ่งใน attribute ช่วยในการเติมเเต่งสีสันให้กับเว็บไซต์ของเรา อาทิเช่น <br>สีพื้นหลัง สีข้อความ เป็นต้น</p>
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>CSS</h1>
+	<h1 id="CSS">CSS</h1>
 	<p>Cascading Style Sheets (CSS) จะใช้เพื่อจัดโครงสร้างของ Webpage <br>
 	เราสามารถเรียกใช้งาน CSS ได้ 3 วิธี ดังนี้
 	<ul>
@@ -127,7 +150,7 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Links</h1>
+	<h1 id="Links">Links</h1>
 	<p>การใส่ Link(Hyperlink) เราสามารถทำได้ง่ายด้วยการใช่ tag &lt;a&gt;<br>
 	<b>&lt;<span style="color: brown;">a</span> <span style="color:red;">href</span>=<span style="color:blue;">"url,file-website"</span>&gt;link text&lt;<span style="color: brown;">/a</span>&gt;</b><br>
 	&lt;<span style="color: brown;">a</span> <span style="color:red;">href</span>=<span style="color:blue;">"https://steamcommunity.com/id/volkzap/"</span>&gt;My steam proflie&lt;<span style="color: brown;">/a</span>&gt;<br>
@@ -139,7 +162,7 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Images</h1>
+	<h1 id="Images">Images</h1>
 	<p>การใส่รูปภาพในภาษา HTML นั้นเราจะใช้ tag <mark>&lt;img&gt;</mark> **ไม่ต้องปิด tag นะจ้ะ <br>
 	<b>&lt;<span style="color: brown;">img</span> <span style="color:red;">src</span>=<span style="color:blue;">"url ของรูป,ที่อยู่ของรูป"</span> <span style="color:red;">alt</span>=<span style="color:blue;">"alternatetext"</span>&gt;</b><br>
 	&lt;<span style="color: brown;">img</span> <span style="color:red;">src</span>=<span style="color:blue;">"\img\mycat.png"</span> <span style="color:red;">alt</span>=<span style="color:blue;">"cat"</span>&gt;</p>
@@ -147,7 +170,7 @@
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 
-	<h1>Tables</h1>
+	<h1 id="Tables">Tables</h1>
 	<p>สำหรับการสร้างตาราง HTML มี tag ที่ใช้คือ &lt;table&gt; เเละ tag ย่ออื่นๆอีกดังนี้<br>
 	<ul>
 		<li>row เเต่ละ row จะใช้ &lt;tr&gt;</li>
@@ -263,6 +286,7 @@
 	</table>
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
-
+</article>
+</section>
 </body>
 </html>
