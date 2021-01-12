@@ -6,6 +6,13 @@
 		body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
 		table, th, td {border: 1px solid black;}
 		td{text-align: center;}  
+		.city {
+			  background-color: tomato;
+			  color: white;
+			  border: 2px solid black;
+			  margin: 20px;
+			  padding: 20px;
+			}
 	</style>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -31,6 +38,7 @@
 			  <li><a href="#Tables">Tables</a></li>
 			  <li><a href="#Lists">Lists</a></li>
 			  <li><a href="#Block">Block and Inline Elements</a></li>
+			  <li><a href="#Class">Classes</a></li>
 			</ul>
 		  </nav>
 	<article>
@@ -390,6 +398,38 @@
 	</p>
 
 	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
+
+	<h1 id="Class">Classes</h1>
+	<p>Class ใน HTML ใช้ระบุ style ต่างๆให้กับ Element <br>
+	<b>ตัวอย่าง</b>
+	<pre style="font-size: large;"><xmp>
+		<!--ในส่วน HEAD-->
+		<head>
+		<style>
+			.city {
+			  background-color: tomato;
+			  color: white;
+			  border: 2px solid black;
+			  margin: 20px;
+			  padding: 20px;
+			}
+			</style>
+		</head>
+		<!--ในส่วน BODY-->
+		<body>
+			<div class="city">
+			  <h2>London</h2>
+			  <p>London is the capital of England.</p>
+			</div>
+		</body>
+	</xmp></pre>
+	ผลลัพธ์
+	</p>
+		<div class="city">
+		  <h2>London</h2>
+		  <p>London is the capital of England.</p>
+		</div>
+	
 </article>
 </section>
 </body>
