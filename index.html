@@ -13,6 +13,9 @@
 			  margin: 20px;
 			  padding: 20px;
 			}
+		.middle{
+				text-align: center;
+			}
 	</style>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -429,7 +432,38 @@
 		  <h2>London</h2>
 		  <p>London is the capital of England.</p>
 		</div>
-	
+	<p>เพิ่มเติมในหนึ่ง Element สามารถมี class ได้มากกว่าหนึ่ง class <br>
+	<b>ตัวอย่างตามนี้เลยจ้า </b>
+	<pre style="font-size: large;"><xmp>
+		<!--ในส่วน HEAD-->
+		<head>
+			<style>
+				.city {
+				  background-color: tomato;
+				  color: white;
+				  border: 2px solid black;
+				  margin: 20px;
+				  padding: 20px;
+				}
+				.middle{
+					text-align: center;
+				}
+				</style>
+			</head>
+			<!--ในส่วน BODY-->
+			<body>
+				<div class="city middle">
+				  <h2>London</h2>
+				  <p>London is the capital of England.</p>
+				</div>
+			</body>
+	</xmp></pre>ผลลัพธ์</p>
+	<div class="city middle">
+		<h2>London</h2>
+		<p>London is the capital of England.</p>
+	  </div>
+
+	<hr> <!-- hr ผมเอามาตีเส้นเเบ่งเนื้อหาเเต่ล่ะ topics -->
 </article>
 </section>
 </body>
