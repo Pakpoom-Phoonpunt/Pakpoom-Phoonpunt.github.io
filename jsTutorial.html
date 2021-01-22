@@ -24,6 +24,7 @@
 			<h4 style="text-align: center;">Content</h4>
 			<ul>
 			  <li><a href="#Where">JS Where To</a></li>
+			  <li><a href="#Output">JS Output</a></li>
 			  
 			</ul>
 		  </nav>
@@ -33,7 +34,9 @@
 			<ul id = lang>
 						<li style="float: left; display: block; text-align: center; padding: 10px;"><a href="index.html">HTML</a></li>
 						<li style="float: left; display: block; text-align: center; padding: 10px;"><a href="jsTutorial.html">JavaScript</a></li>
-			</ul></div><br><br><br> <br>
+			</ul>
+		</div><br><br><br> <br>
+
 	<h1 id="Where">JS Where To</h1>
 	<div style="border: 1px solid slateblue; ">
 		<p>JS เราสามารถเลือกเขียนได้สองเเบบคือ <br>1.เขียนในไฟล์ HTML โดยใช้ tag &lt;script><br>2.เขียนในไฟล์ .js เเล้วทำการลิ้งมาในไฟล์ HTML <br><br>
@@ -58,9 +61,34 @@
 		<h2>JavaScript in Head</h2>
 		<p id="demo">A Paragraph.</p>
 		<button type="button" onclick="myFunction()">Try it</button>
-		<br><br>
-		<b>ตัวอย่างการเขียนในไฟล์ .js</b> 
+		<br><br><hr>
+		<b>ตัวอย่างการเขียนในไฟล์ .js</b> <br>
+		อย่างเเรกให้เราสร้างไฟล์ .js เเล้วพิม code ตามนี้ 
+		<xmp>
+			function myFunction2() {
+				document.getElementById("demo2").innerHTML = "Paragraph changed.";
+			}
+		</xmp>
+		เเละมาเชื่อม script เข้ากับไฟล์ HTML ของกันตามนี้
+		<xmp>
+		<body>
+			<h2>External JavaScript</h2>
+			<p id="demo2">A Paragraph.</p>
+			<button type="button" onclick="myFunction()">Try it</button>
+			<p>(myFunction is stored in an external file called "js/test.js")</p>
+		</body>
+		<script src="js/test.js"></script>
+		</xmp>
+		<b>ผลลัพธ์ที่ได้ :</b><br>
+		<h2>External JavaScript</h2>
+		<p id="demo2">A Paragraph.</p>
+		<button type="button" onclick="myFunction2()">Try it</button>
+		<p>(myFunction is stored in an external file called "js/test.js")</p>
+		<script src="js/test.js"></script>
 		</p>
+	</div>
+	<h1 id="Output">JS Output</h1>
+	<div style="border: 1px solid slateblue; ">
 	</div>
 </article>
 </section>
