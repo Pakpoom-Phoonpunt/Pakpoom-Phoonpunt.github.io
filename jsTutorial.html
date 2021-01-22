@@ -38,10 +38,10 @@
 		</div><br><br><br> <br>
 
 	<h1 id="Where">JS Where To</h1>
-	<div style="border: 1px solid slateblue; ">
+	<div style="border: 3px solid slateblue; ">
 		<p>JS เราสามารถเลือกเขียนได้สองเเบบคือ <br>1.เขียนในไฟล์ HTML โดยใช้ tag &lt;script><br>2.เขียนในไฟล์ .js เเล้วทำการลิ้งมาในไฟล์ HTML <br><br>
 		<b>ตัวอย่างการเขียนใน HTML</b> 
-		<xmp>		
+		<xmp style="font-size:large;color: red; ">		
 			<head>
 				<script>
 				function myFunction() {
@@ -61,16 +61,16 @@
 		<h2>JavaScript in Head</h2>
 		<p id="demo">A Paragraph.</p>
 		<button type="button" onclick="myFunction()">Try it</button>
-		<br><br><hr>
+		<br><br><hr><br>
 		<b>ตัวอย่างการเขียนในไฟล์ .js</b> <br>
 		อย่างเเรกให้เราสร้างไฟล์ .js เเล้วพิม code ตามนี้ 
-		<xmp>
+		<xmp style="font-size:large;color: red;" >
 			function myFunction2() {
 				document.getElementById("demo2").innerHTML = "Paragraph changed.";
 			}
 		</xmp>
 		เเละมาเชื่อม script เข้ากับไฟล์ HTML ของกันตามนี้
-		<xmp>
+		<xmp style="font-size:large;color: red; ">
 		<body>
 			<h2>External JavaScript</h2>
 			<p id="demo2">A Paragraph.</p>
@@ -86,9 +86,54 @@
 		<p>(myFunction is stored in an external file called "js/test.js")</p>
 		<script src="js/test.js"></script>
 		</p>
-	</div>
+	</div><br>
 	<h1 id="Output">JS Output</h1>
-	<div style="border: 1px solid slateblue; ">
+	<div style="border: 3px solid gold; ">
+		<p>ในภาษา JS ผมสามารถดู Output การทำงานของโปรเเกรมที่เราเขียนไว้ได้ด้วยคำสั่งสี่อย่างนี้ 
+			<table style="width:50%">
+				<tr>
+					<th>คำสั่ง</th>
+					<th>รายละเอียด</th>
+				</tr>
+				<tr>
+					<td>innerHTML.</td>
+					<td>จะเเสดง Output ใน HTML Element</td>
+				</tr>
+				<tr>
+					<td>document.write().</td>
+					<td>จะเเสดง Output ใน HTML (หน้าเว็บของเรา)</td>
+				</tr>
+				<tr>
+					<td>window.alert().</td>
+					<td>จะเเสดง Output ใน alert box</td>
+				</tr>
+				<tr>
+					<td>console.log().</td>
+					<td>จะเเสดง Output ใน browser console <br>(กด F12 เเล้วเลือก console)</td>
+				</tr>
+			</table>
+			<b>ตัวอย่างการใช้คำสั่ง <mark>innerHTML.</mark></b> 
+			<xmp style="font-size:large;color: red; ">
+				<body>
+					<p>My First Paragraph</p>
+					<p id="demo3">คำตอบล่ะ</p>
+					
+					<script>
+					document.getElementById("demo3").innerHTML = 5 + 6;
+					</script>
+				</body>
+			</xmp>
+			<b>ผลลัพธ์ที่ได้ :</b><br>
+			<p>My First Paragraph</p>
+			<p id="demo3">คำตอบล่ะ</p>
+					
+			<script>
+				document.getElementById("demo3").innerHTML = 5 + 6;
+			</script><br>
+			จะเห็นว่า tag p ที่มี id = "demo3" ไม่ได้เเสดงคำว่า "คำตอบล่ะ" เเต่เเสดงเป็นผลลัพธ์ของเราก็คือ 5 + 6 = 11<br><br>
+			<hr><br><b>ตัวอย่างการใช้คำสั่ง <mark>document.write().</mark></b> 
+
+		</p>
 	</div>
 </article>
 </section>
