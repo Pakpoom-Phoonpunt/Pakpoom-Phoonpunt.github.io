@@ -9,6 +9,11 @@
 
 	</style>
 	<link rel="stylesheet" href="css/styles.css">
+	<script>
+		function myFunction() {
+		  document.getElementById("demo").innerHTML = "Paragraph changed.";
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -27,10 +32,36 @@
 		<div style="border: 4px solid black; float: left; margin: 0px; padding: 10px;">
 			<ul id = lang>
 						<li style="float: left; display: block; text-align: center; padding: 10px;"><a href="index.html">HTML</a></li>
-						<li style="float: left; display: block; text-align: center; padding: 10px;"><a href="jsTutorial.html">JAVA</a></li>
+						<li style="float: left; display: block; text-align: center; padding: 10px;"><a href="jsTutorial.html">JavaScript</a></li>
 			</ul></div><br><br><br> <br>
 	<h1 id="Where">JS Where To</h1>
-	
+	<div style="border: 1px solid slateblue; ">
+		<p>JS เราสามารถเลือกเขียนได้สองเเบบคือ <br>1.เขียนในไฟล์ HTML โดยใช้ tag &lt;script><br>2.เขียนในไฟล์ .js เเล้วทำการลิ้งมาในไฟล์ HTML <br><br>
+		<b>ตัวอย่างการเขียนใน HTML</b> 
+		<xmp>		
+			<head>
+				<script>
+				function myFunction() {
+				  document.getElementById("demo").innerHTML = "Paragraph changed.";
+				}
+				</script>
+			</head>
+			<body>
+				
+				<h2>JavaScript in Head</h2>
+				<p id="demo">A Paragraph.</p>
+				<button type="button" onclick="myFunction()">Try it</button>
+				
+			</body>	
+		</xmp>
+		<b>ผลลัพธ์ที่ได้ :</b><br>
+		<h2>JavaScript in Head</h2>
+		<p id="demo">A Paragraph.</p>
+		<button type="button" onclick="myFunction()">Try it</button>
+		<br><br>
+		<b>ตัวอย่างการเขียนในไฟล์ .js</b> 
+		</p>
+	</div>
 </article>
 </section>
 </body>
