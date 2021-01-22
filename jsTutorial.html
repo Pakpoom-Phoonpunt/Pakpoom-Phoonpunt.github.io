@@ -146,15 +146,27 @@
 			<b><mark style="background-color: lightblue;">ข้อควรระวังสุดๆถ้าเราใช้คำสั่ง <ins>document.write</ins> หลังจากไฟล์ html ของเราได้ทำการโหลดข้อมูลไปเเล้วคำสั่งจะ delete ข้อมูลที่โหลดมาทำหมดเเล้วเเสดง Output ออกมา </mark></b><br>
 			<br><b>ตัวอย่างที่ควรจะระวัง</mark></b> 
 			<xmp style="font-size:large;color: red; ">
-				<body>>
+				<body>
 					<p>My first paragraph.</p>
 					
 					<button type="button" onclick="document.write(5 + 6)">Try it</button>
 				</body>
 			</xmp>
 			<b>มาลองกดดูผลลัพธ์กัน :</b><br>
+			<p>My first paragraph.</p>
 			<button type="button" onclick="document.write(5 + 6)">Try it</button><br><br><hr><br>
 			<b>ตัวอย่างการใช้คำสั่ง <mark>window.alert().</mark></b> 
+			<xmp style="font-size:large;color: red; ">
+				<body>
+					<p>My first paragraph.</p>
+					
+					<button type="button" onclick="window.alert(5+6)">Try it</button>
+				</body>
+			</xmp>
+			<b>ผลลัพธ์ที่ได้ :</b><br>
+			<p>My first paragraph.</p>
+			<button type="button" onclick="window.alert(5+6)">Try it</button><br><br><hr><br>
+			<b>ตัวอย่างการใช้คำสั่ง <mark>console.log().</mark></b> 
 		</p>
 	</div>
 </article>
