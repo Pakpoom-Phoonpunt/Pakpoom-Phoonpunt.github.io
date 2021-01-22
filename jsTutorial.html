@@ -132,7 +132,29 @@
 			</script><br>
 			จะเห็นว่า tag p ที่มี id = "demo3" ไม่ได้เเสดงคำว่า "คำตอบล่ะ" เเต่เเสดงเป็นผลลัพธ์ของเราก็คือ 5 + 6 = 11<br><br>
 			<hr><br><b>ตัวอย่างการใช้คำสั่ง <mark>document.write().</mark></b> 
-
+			<xmp style="font-size:large;color: red; ">
+				<body>
+					<script>
+					document.write(5 + 6);
+					</script>
+				</body>
+			</xmp>
+			<b>ผลลัพธ์ที่ได้ :</b><br>
+			<script>
+				document.write(5 + 6);
+			</script><br>
+			<b><mark style="background-color: lightblue;">ข้อควรระวังสุดๆถ้าเราใช้คำสั่ง <ins>document.write</ins> หลังจากไฟล์ html ของเราได้ทำการโหลดข้อมูลไปเเล้วคำสั่งจะ delete ข้อมูลที่โหลดมาทำหมดเเล้วเเสดง Output ออกมา </mark></b><br>
+			<br><b>ตัวอย่างที่ควรจะระวัง</mark></b> 
+			<xmp style="font-size:large;color: red; ">
+				<body>>
+					<p>My first paragraph.</p>
+					
+					<button type="button" onclick="document.write(5 + 6)">Try it</button>
+				</body>
+			</xmp>
+			<b>มาลองกดดูผลลัพธ์กัน :</b><br>
+			<button type="button" onclick="document.write(5 + 6)">Try it</button><br><br><hr><br>
+			<b>ตัวอย่างการใช้คำสั่ง <mark>window.alert().</mark></b> 
 		</p>
 	</div>
 </article>
